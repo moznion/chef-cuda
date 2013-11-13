@@ -1,11 +1,11 @@
-cuda-cookbook CHANGELOG
+chef-cuda CHANGELOG
 =======================
 
-This file is used to list changes made in each version of the cuda-cookbook cookbook.
+This file is used to list changes made in each version of the chef-cuda cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of cuda-cookbook
+- [your_name] - Initial release of chef-cuda
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

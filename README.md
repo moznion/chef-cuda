@@ -1,4 +1,4 @@
-cuda-cookbook Cookbook
+chef-cuda Cookbook
 ======================
 TODO: Enter the cookbook description here.
 
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - cuda-cookbook needs toaster to brown your bagel.
+- `toaster` - chef-cuda needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List you cookbook attributes here.
 
 e.g.
-#### cuda-cookbook::default
+#### chef-cuda::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['cuda-cookbook']['bacon']</tt></td>
+    <td><tt>['chef-cuda']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### cuda-cookbook::default
+#### chef-cuda::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `cuda-cookbook` in your node's `run_list`:
+Just include `chef-cuda` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[cuda-cookbook]"
+    "recipe[chef-cuda]"
   ]
 }
 ```
