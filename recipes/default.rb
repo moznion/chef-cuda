@@ -61,9 +61,9 @@ execute 'Set PATH' do
 end
 
 samples_dir     = "/usr/local/cuda/samples"
-samples_bin_dir = samples_dir << '/bin/x86_64/linux/release'
-samples_path    = "export PATH=#{samples_bin_dir}:\$PATH"
+samples_bin_dir = samples_dir + '/bin/x86_64/linux/release'
+samples_path    = 'export PATH=' << samples_bin_dir << ':\$PATH'
 execute 'Install CUDA SDK Samples' do
   command %!cd #{samples_dir} && make && echo "#{samples_path}" >> #{node['cuda']['profile']}!
-  not_if { File.exist?(samples_bin_dir) }
+  not_if { File.open(node['cuda']['profile']).read.match(samples_path) }
 end
